@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="io.gvox.plugin.phonecalltrap"
+           id="cordova-phone-call-trap"
       version="0.1.2">
     <name>PhoneCallTrap</name>
-    <description>A phone call trap</description>
+    <description>It is a Apache Cordova plugin to simplify handling phone call status and events in Android and iOS devices.</description>
     <license>MIT</license>
-    <keywords>phonegap,calendar, phone, call, phone-call</keywords>
+    <keywords>phonegap, cordova, calendar, phone, call, phone-call, events, android, ios</keywords>
 
 
     <js-module src="www/PhoneCallTrap.js" name="PhoneCallTrap">
@@ -26,5 +26,16 @@
         </config-file>
 
         <source-file src="src/android/PhoneCallTrap.java" target-dir="src/io/gvox/phonecalltrap" />
+    </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PhoneCallTrap">
+                <param name="ios-package" value="CDVPhoneCallTrap"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVPhoneCallTrap.h"/>
+        <source-file src="src/ios/CDVPhoneCallTrap.m"/>
+        <framework src="CoreTelephony.framework"/>
      </platform>
 </plugin>

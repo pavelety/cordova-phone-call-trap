@@ -1,16 +1,17 @@
 {
   "name": "io.gvox.plugin.phonecalltrap",
   "version": "0.1.2",
-  "description": "A phone call trap",
+  "description": "It is a Apache Cordova plugin to simplify handling phone call status and events in Android and iOS devices",
   "cordova": {
-    "id": "io.gvox.plugin.phonecalltrap",
+    "id": "cordova-phone-call-trap",
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renanoliveira/cordova-phone-call-trap.git"
+    "url": "git+https://github.com/pavelety/cordova-phone-call-trap"
   },
   "keywords": [
     "phonegap",
@@ -27,7 +28,7 @@
   "author": "Renan Oliveira and Felipe Ferreira",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/renanoliveira/cordova-phone-call-trap/issues"
+    "url": "https://github.com/pavelety/cordova-phone-call-trap/issues"
   },
-  "homepage": "https://github.com/renanoliveira/cordova-phone-call-trap#readme"
+  "homepage": "https://github.com/pavelety/cordova-phone-call-trap#readme"
 }

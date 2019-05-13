@@ -1,12 +1,12 @@
 Cordova PhoneCall Trap
 =======================
 
-It is a Apache Cordova plugin to simplify handling phone call status and events in Android devices.
+It is a Apache Cordova plugin to simplify handling phone call status and events in Android and iOS devices.
 
 
 ## Install
 
-    $ cordova plugin add io.gvox.plugin.phonecalltrap
+    $ cordova plugin add cordova-phone-call-trap
 
 
 ## Quick Example
@@ -23,7 +23,7 @@ It is a Apache Cordova plugin to simplify handling phone call status and events 
                 break;
 
             case "IDLE":
-                console.log("Phone is idle");
+                console.log("Phone is idle, call is ended");
                 break;
         }
     });
@@ -32,14 +32,15 @@ It is a Apache Cordova plugin to simplify handling phone call status and events 
 ## Supported platforms
 
 - Android 2.3.3 or higher
+- iOS
 
 
 ## References
+Thanks this repo for Android
+https://github.com/renanoliveira/cordova-phone-call-trap
 
-We have tried PhoneListener but it is only compatible with Phonegap 1.6 and does not work with new Apache Cordova versions. Also, its deployment isn't as easy as an Apache Cordova plugin should be. We are thankful for their work, though.
-
-https://github.com/devgeeks/PhoneListener
-
+Thanks this repo for iOS
+https://github.com/ElieSauveterre/cordova-phone-call-trap
 
 ## License
 
