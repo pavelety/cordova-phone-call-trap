@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="cordova-phone-call-trap"
-      version="0.1.2">
+      version="0.1.3">
     <name>PhoneCallTrap</name>
     <description>It is a Apache Cordova plugin to simplify handling phone call status and events in Android and iOS devices.</description>
     <license>MIT</license>
